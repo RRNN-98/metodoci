@@ -228,6 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
             })
                 .then(() => {
                     form.style.display = 'none';
+                    const formHeader = document.querySelector('.form-header');
+                    if (formHeader) formHeader.style.display = 'none';
                     successMsg.style.display = 'block';
                     successMsg.scrollIntoView({ behavior: "smooth", block: "center" });
                 })
